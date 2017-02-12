@@ -36,12 +36,20 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .pup {
     flex-direction: column;
 
+    &__image {
+      margin-top: 1rem;
+    }
+
     &__photo {
       width: 18rem;
+    }
+
+    &__group {
+    margin: 1rem;
     }
   }
 }
