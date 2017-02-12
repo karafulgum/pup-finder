@@ -3,10 +3,14 @@
   justify-content: center;
   align-items: center;
 
+  &__group {
+    flex-basis: calc(50% - 2rem);
+    margin: 0 1rem;
+  }
+
   &__image {
     position: relative;
     -webkit-transform: rotate(-7deg);
-    flex-shrink: 0;
   }
 
   &__polaroid {
@@ -15,12 +19,11 @@
 
   &__photo {
     position: absolute;
-    top: 1.25rem;
+    top: 1.32rem;
     left: 1.4rem;
-    height: 18.65rem;
-    width: 18.2rem;
+    height: 18.5rem;
+    width: 17.5rem;
     object-fit: cover;
-
   }
 
 &__title {
@@ -36,5 +39,9 @@
 @media (max-width: 600px) {
   .pup {
     flex-direction: column;
+
+    &__photo {
+      width: 18rem;
+    }
   }
 }
