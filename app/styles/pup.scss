@@ -2,27 +2,40 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   &__group {
-    flex-basis: calc(50% - 2rem);
-    margin: 0 1rem;
+    flex-basis: calc(100% / 4 - 1rem);
+    margin: 0 0.5rem;
+    cursor: pointer;
+
+    &:hover {
+      .pup__info {
+        display: block;
+      }
+
+      .pup__info-stats {
+        display: block;
+      }
+    }
   }
 
   &__image {
     position: relative;
-    -webkit-transform: rotate(-7deg);
+    // -webkit-transform: rotate(-7deg);
   }
 
   &__polaroid {
     height: 25rem;
+    min-width: 18rem;
   }
 
   &__photo {
     position: absolute;
     top: 1.32rem;
-    left: 1.4rem;
+    left: 1.2rem;
     height: 18.5rem;
-    width: 17.5rem;
+    width: 15.6rem;
     object-fit: cover;
   }
 
@@ -36,10 +49,17 @@
   }
 
   &__info {
+    display: none;
+    position: absolute;
+    top: 105%;
+    padding: 0.5rem;
     text-align: center;
+    background: rgba(#fff,.35);
+    border-radius: 0.4rem;
   }
 
   &__info-stats {
+    display: none;
     margin-top: 0;
     margin-bottom: 0.5rem;
   }
@@ -50,7 +70,7 @@
     flex-direction: column;
 
     &__image {
-      margin-top: 1rem;
+      // margin-top: 1rem;
     }
 
     &__photo {
@@ -58,7 +78,7 @@
     }
 
     &__group {
-    margin: 1rem;
+    margin: 1rem 0;
     }
   }
 }

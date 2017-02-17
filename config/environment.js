@@ -29,6 +29,8 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    //
+    // ENV.API_KEY = 'a69ffc776b2c354e5a10a8eb636a919f';
   }
 
   if (environment === 'test') {
@@ -45,6 +47,8 @@ module.exports = function(environment) {
   if (environment === 'production') {
 
   }
+
+
 
   return ENV;
 };
